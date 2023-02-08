@@ -1,6 +1,6 @@
 # Table of contents
 
-## Group 1
+## 📖 User Manual
 
-* [Usage Manual](README.md)
-* [Handling Flowgraphs](group-1/handling-flowgraphs.md)
+* [Start here](README.md)
+* [Handling Flowgraphs](user-manual/handling-flowgraphs.md)
