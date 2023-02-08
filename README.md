@@ -11,7 +11,7 @@ description: >-
 [Jump to navigation](https://wiki.gnuradio.org/index.php?title=Usage\_Manual#mw-head) [Jump to search](https://wiki.gnuradio.org/index.php?title=Usage\_Manual#searchInput)
 
 * [Handling Flowgraphs](user-manual/handling-flowgraphs.md)
-* [Types of Blocks](https://wiki.gnuradio.org/index.php?title=Types\_of\_Blocks)
+* [Types of Blocks](user-manual/type-of-blocks.md)
 * [Polymorphic Types (PMTs)](https://wiki.gnuradio.org/index.php?title=Polymorphic\_Types\_\(PMTs\)), which are heavily used in the stream tags and message passing interfaces
 * [Metadata Information](https://wiki.gnuradio.org/index.php?title=Metadata\_Information), which can be added to a raw IQ file
 * [Message Passing](https://wiki.gnuradio.org/index.php?title=Message\_Passing), the method of passing control data, metadata, or packet structures between blocks
