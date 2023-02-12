@@ -1,10 +1,10 @@
 ---
 description: >-
   Our Usage Manual provides detailed information about various sub-components of
-  GNU Radio.
+  GNU Radio. So it does.
 ---
 
-# Start here
+# Start here!
 
 ## &#x20;<a href="#firstheading" id="firstheading"></a>
 
