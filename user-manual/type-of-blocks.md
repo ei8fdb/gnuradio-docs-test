@@ -1,6 +1,6 @@
 # Type of Blocks
 
-### Introduction
+### Introduction.
 
 To take advantage of the gnuradio framework, users will create various blocks to implement the desired data processing. There are several types of blocks to choose from:
 
@@ -13,7 +13,7 @@ To take advantage of the gnuradio framework, users will create various blocks to
 
 The sync block allows users to write blocks that consume and produce an equal number of items per port. A sync block may have any number of inputs or outputs. When a sync block has zero inputs, its called a source. When a sync block has zero outputs, its called a sink.
 
-#### &#x20;C++ example
+#### C++ example
 
 An example sync block in C++:
 
@@ -43,8 +43,9 @@ public:
 ```
 
 {% hint style="info" %}
-**Some observations**\
-****
+**Some observations**\\
+
+***
 
 * noutput\_items is the length in items of all input and output buffers
 * an input signature of gr\_make\_io\_signature(0, 0, 0) makes this a source block
@@ -72,8 +73,9 @@ class my_sync_block(gr.sync_block):
 The input\_items and output\_items are lists of lists. The input\_items contains a vector of input samples for every input stream, and the output\_items is a vector for each output stream where we can place items. Then length of output\_items\[0] is equivalent to the noutput\_items concept we are so familiar with from the C++ blocks.
 
 {% hint style="info" %}
-**Some observations**\
-****
+**Some observations**\\
+
+***
 
 * The length of all input vector and all output vectors is identical
 * in\_sig=None would turn this into a source block
@@ -110,7 +112,7 @@ public:
 {% hint style="info" %}
 **Some observations**
 
-****
+***
 
 * The gr\_sync\_decimator constructor takes a 4th parameter, the decimation factor
 * The user should assume that the number of input items = noutput\_items\*decimation
@@ -137,8 +139,9 @@ class my_decim_block(gr.decim_block):
 ```
 
 {% hint style="info" %}
-**Some observations**\
-****
+**Some observations**\\
+
+***
 
 * The set\_relative\_rate call configures the input/output relationship
 * To set an interpolation, use self.set\_relative\_rate(interpolation)
@@ -172,8 +175,9 @@ public:
 ```
 
 {% hint style="info" %}
-**Some observations**\
-****
+**Some observations**\\
+
+***
 
 * The gr\_sync\_interpolator constructor takes a 4th parameter, the interpolation factor
 * The user should assume that the number of input items = noutput\_items/interpolation
@@ -198,7 +202,7 @@ class my_interp_block(gr.interp_block):
 
 The basic block provides no relation between the number of input items and the number of output items. All other blocks are just simplifications of the basic block. Users should choose to inherit from basic block when the other blocks are not suitable.
 
-#### The Adder Block revisited as a Basic Block  in C++
+#### The Adder Block revisited as a Basic Block in C++
 
 ```cpp
 // 
@@ -243,8 +247,9 @@ public:
 ```
 
 {% hint style="info" %}
-**Some observations**\
-****
+**Some observations**\\
+
+***
 
 * This class overloads the general\_work() method, not work()
 * The general work has a parameter: ninput\_items
